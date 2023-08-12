@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .loading-logo {
+    width: 200px; /* Adjust the size of your logo */
+    height: 200px; /* Adjust the size of your logo */
+    animation: blink 1s infinite alternate;
+  }
+  
+  .loading-text {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
